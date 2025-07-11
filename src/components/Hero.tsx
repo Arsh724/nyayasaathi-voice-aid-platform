@@ -23,6 +23,9 @@ export const Hero = () => {
                 Just a Voice Away
               </span>
             </h1>
+            <h2 className="text-2xl md:text-3xl font-semibold text-muted-foreground/80 mb-4">
+              कानूनी सहायता, बस एक आवाज़ दूर।
+            </h2>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-lg">
               NyayaSaathi simplifies legal paperwork and connects rural citizens with justice through AI.
             </p>
