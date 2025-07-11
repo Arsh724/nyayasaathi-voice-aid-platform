@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Scale } from "lucide-react";
 
@@ -55,11 +56,11 @@ export const Header = () => {
 
           {/* Auth Buttons */}
           <div className="hidden md:flex items-center gap-4">
-            <Button variant="ghost" size="sm">
-              Login
+            <Button variant="ghost" size="sm" asChild>
+              <Link to="/login">Login</Link>
             </Button>
-            <Button variant="default" size="sm">
-              Sign Up
+            <Button variant="default" size="sm" asChild>
+              <Link to="/signup">Sign Up</Link>
             </Button>
           </div>
 
@@ -101,11 +102,11 @@ export const Header = () => {
                 Contact
               </button>
               <div className="flex gap-4 pt-4 border-t border-border">
-                <Button variant="ghost" size="sm" className="flex-1">
-                  Login
+                <Button variant="ghost" size="sm" className="flex-1" asChild>
+                  <Link to="/login">Login</Link>
                 </Button>
-                <Button variant="default" size="sm" className="flex-1">
-                  Sign Up
+                <Button variant="default" size="sm" className="flex-1" asChild>
+                  <Link to="/signup">Sign Up</Link>
                 </Button>
               </div>
             </nav>
